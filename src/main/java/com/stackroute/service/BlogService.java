@@ -8,27 +8,25 @@ public interface BlogService {
     /**
      * AbstractMethod to save a blog
      */
-    public Blog saveBlog(Blog blog);
+    Blog saveBlog(Blog blog);
 
     /**
      * AbstractMethod to get all blogs
      */
-    public List<Blog> getAllBlogs();
+    List<Blog> getAllBlogs();
 
     /**
      * AbstractMethod to get blog by id
      */
-    public Blog getBlogById(int id);
+    Blog getBlogById(int id);
 
     /**
      * AbstractMethod to delete blog by id
      */
-    public void deleteBlog(int id);
+    void deleteBlog(int id);
 
     /**
      * AbstractMethod to update a blog
      */
-    public Blog updateBlog(Blog blog, int blogId);
-
-    Blog updateBlog(Blog newBlog, Integer blogId);
+    Blog updateBlog(Blog blog);
 }
